@@ -19,7 +19,7 @@ stock_df = pd.DataFrame()
 
 for ticker in tickers:
     data = yf.download(ticker, start=start_date, end=end_date)
-    stock_df = data.head()
+    stock_df = data
 
 output_folder = r"D:\soc proj\Assignment 1"
 
